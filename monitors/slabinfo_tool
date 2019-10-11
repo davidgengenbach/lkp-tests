@@ -1,0 +1,21 @@
+#!/bin/sh
+# - interval
+
+if [ -z "$interval" ]; then
+  case $file in
+    sched_debug)  interval=60 ;;
+    stat)   interval=10 ;;
+    zoneinfo) interval=10 ;;
+    *)    interval=1  ;;
+  esac
+fi
+
+. $LKP_SRC/lib/wait.sh
+setup_wait
+
+while :
+do
+  echo time: $(date +%s)
+  $LKP_SRC/bin/slabinfo
+  wait_timeout $interval
+done

@@ -12,6 +12,7 @@ proc-vmstat:
 proc-stat:
 meminfo:
 slabinfo:
+slabinfo_tool:
 interrupts:
 lock_stat:
 latency_stats:

@@ -407,6 +407,7 @@ leaking_addresses.total_number
 ^rcutorture.cpuhotplug-.*\.rcu_hotplug
 ^sched_debug.
 ^slabinfo.
+^slabinfo_tool.
 ^softirqs.
 ^softirqs.CPU
 ^stderr\..*

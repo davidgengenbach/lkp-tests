@@ -17,6 +17,7 @@
 ^proc-vmstat.
 ^sched_debug.
 ^slabinfo.
+^slabinfo_tool.
 ^softirqs.
 ^time.
 ^turbostat.
